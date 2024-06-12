@@ -1,12 +1,13 @@
 <template>
     <div v-for="city in savedCities" :key="city.id">
-        <CityCard :city="city" />
+        <CityCard :city="city" @click="goToCityView(city)" />
     </div>
 </template>
 
 <script setup>
 import axios from "axios";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 import CityCard from "./CityCard.vue";
 
 const savedCities = ref([]);
@@ -30,4 +31,19 @@ const getCities = async () => {
 };
 
 await getCities();
+
+const router = useRouter();
+const goToCityView = (city) => {
+    router.push({
+        name: 'cityView',
+        params: {
+            state: city.state,
+            city: city.city
+        },
+        query: {
+            lat: city.coords.lat,
+            lng: city.coords.lng
+        },
+    });
+};
 </script>
