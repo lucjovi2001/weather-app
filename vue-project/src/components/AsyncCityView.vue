@@ -36,6 +36,16 @@
             </p>
             <img class="w-[150px] h-auto" :src="`https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`" alt="" />
         </div>
+
+        <hr class="border-white border-opacity-10 border w-full" />
+
+        <!-- Hourly weather -->
+        <div class="max-w-screen-md w-full py-12">
+            <div class="mx-8 text-white">
+                <h2 class="mb-4">Hourly Weather</h2>
+                <div class="flex gap-10 overflow-x-scroll"></div>
+            </div>
+        </div>
     </div>
 </template>
 
