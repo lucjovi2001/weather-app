@@ -86,6 +86,11 @@
                 </div>
             </div>
         </div>
+
+        <div class="flex items-center gap-2 py-12 text-white cursor-pointer duration-150 hover:text-red-500">
+            <i class="fa-solid fa-trash"></i>
+            <p>Remove City</p>
+        </div>
     </div>
 </template>
 
