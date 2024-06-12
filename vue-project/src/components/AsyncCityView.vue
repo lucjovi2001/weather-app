@@ -28,6 +28,11 @@
             <p class="text-8xl mb-8">
                 {{ Math.round(weatherData.current.temp) }}&deg;
             </p>
+            <div class="text-center">
+                <p>
+                    Feels like {{ Math.round(weatherData.current.feels_like) }}&deg;
+                </p>
+            </div>
         </div>
     </div>
 </template>
