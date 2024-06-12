@@ -28,15 +28,13 @@
             <p class="text-8xl mb-8">
                 {{ Math.round(weatherData.current.temp) }}&deg;
             </p>
-            <div class="text-center">
-                <p>
-                    Feels like {{ Math.round(weatherData.current.feels_like) }}&deg;
-                </p>
-                <p class="capitalize">
-                    {{ weatherData.current.weather[0].description }}
-                </p>
-                <img class="w-[150px] h-auto" :src="`https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`" alt="" />
-            </div>
+            <p>
+                Feels like {{ Math.round(weatherData.current.feels_like) }}&deg;
+            </p>
+            <p class="capitalize">
+                {{ weatherData.current.weather[0].description }}
+            </p>
+            <img class="w-[150px] h-auto" :src="`https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`" alt="" />
         </div>
     </div>
 </template>
