@@ -54,6 +54,9 @@
                             }}
                         </p>
                         <img class="w-auto h-[50px] object-cover" :src="`http://openweathermap.org/img/wn/${hourData.weather[0].icon}@2x.png`" alt="" />
+                        <p class="text-xl">
+                            {{ Math.round(hourData.temp) }}&deg;
+                        </p>
                     </div>
                 </div>
             </div>
