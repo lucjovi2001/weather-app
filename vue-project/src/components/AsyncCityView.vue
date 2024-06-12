@@ -25,6 +25,9 @@
                 ) 
                 }}
             </p>
+            <p class="text-8xl mb-8">
+                {{ Math.round(weatherData.current.temp) }}&deg;
+            </p>
         </div>
     </div>
 </template>
