@@ -12,7 +12,7 @@
       <p v-if="searchError">
         Sorry, something went wrong. Please try again.
       </p>
-      <p v-if="!serverError && mapboxSearchResults.length === 0">
+      <p v-if="!searchError && mapboxSearchResults.length === 0">
         No results match your query. Try a different term.
       </p>
         <template v-else>
