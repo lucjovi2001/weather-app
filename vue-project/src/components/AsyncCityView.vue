@@ -35,6 +35,7 @@
                 <p class="capitalize">
                     {{ weatherData.current.weather[0].description }}
                 </p>
+                <img class="w-[150px] h-auto" :src="`https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`" alt="" />
             </div>
         </div>
     </div>
